@@ -5772,3 +5772,22 @@ button.close {
     display: none !important;
   }
 }
+body {
+  background: url(/images/engine-house.png);
+  background-size: 100%;
+}
+.header {
+  color: #fefefe;
+}
+.header h1 {
+  font-family: 'codystar';
+  font-family: 'Give You Glory';
+  font-size: 4em;
+  text-align: center;
+}
+.header p {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Stalemate', cursive;
+}
