@@ -1,28 +1,41 @@
 body {
-  background: url(/images/engine-house.png);
-  background-size: 100%;
+  background-image: url(/images/timeline.png);
+  background-repeat: repeat-y;
+  background-position: 163px top;
 }
 
 .header {
+  width: 100%;
+  min-width: 1000px;
+  margin-bottom: 60px;
+}
+
+.schedule-item {
+  margin: 0;
+  padding: 0 0 0 240px;
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+
+  h2 {
+    line-height: 80px;
+    color: #631532;
+  font-family: Inconsolata;
+  text-transform: uppercase;
+  }
+}
+
+.time {
+  position: absolute;
+  left: 126px;
+  top: 0;
+  font-family: Inconsolata;
+  font-size: 23px;
+  line-height: 80px;
+  text-align: center;
   color: #fefefe;
-
-  h1 {
-    font-family: 'codystar';
-    font-family: 'Give You Glory';
-    font-size: 4em;
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Stalemate', cursive;
-  }
-
-  .getting-married {
-  }
-
-  .date {
-  }
+  background: #631532;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }

@@ -743,7 +743,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 970px;
   }
 }
 .container-fluid {
@@ -5773,21 +5773,39 @@ button.close {
   }
 }
 body {
-  background: url(/images/engine-house.png);
-  background-size: 100%;
+  background-image: url(/images/timeline.png);
+  background-repeat: repeat-y;
+  background-position: 163px top;
 }
 .header {
+  width: 100%;
+  min-width: 1000px;
+  margin-bottom: 60px;
+}
+.schedule-item {
+  margin: 0;
+  padding: 0 0 0 240px;
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+}
+.schedule-item h2 {
+  line-height: 80px;
+  color: #631532;
+  font-family: Inconsolata;
+  text-transform: uppercase;
+}
+.time {
+  position: absolute;
+  left: 126px;
+  top: 0;
+  font-family: Inconsolata;
+  font-size: 23px;
+  line-height: 80px;
+  text-align: center;
   color: #fefefe;
-}
-.header h1 {
-  font-family: 'codystar';
-  font-family: 'Give You Glory';
-  font-size: 4em;
-  text-align: center;
-}
-.header p {
-  text-align: center;
-  font-size: 2em;
-  font-family: 'Sacramento', cursive;
-  font-family: 'Stalemate', cursive;
+  background: #631532;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
