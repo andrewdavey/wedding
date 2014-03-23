@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/andrewdavey/wedding",
   "devDependencies": {
-    "less": "^1.7.0"
+    "less": "^1.7.0",
+    "gulp": "^3.5.6",
+    "gulp-less": "^1.2.3",
+    "gulp-rename": "^1.2.0"
   }
 }
