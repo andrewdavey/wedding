@@ -5772,40 +5772,43 @@ button.close {
     display: none !important;
   }
 }
-body {
-  background-image: url(/images/timeline.png);
-  background-repeat: repeat-y;
-  background-position: 163px top;
-}
-.header {
-  width: 100%;
-  min-width: 1000px;
-  margin-bottom: 60px;
-}
-.schedule-item {
-  margin: 0;
-  padding: 0 0 0 240px;
+h2 {
   position: relative;
-  width: 100%;
-  min-width: 1000px;
-}
-.schedule-item h2 {
-  line-height: 80px;
   color: #631532;
   font-family: Inconsolata;
   text-transform: uppercase;
 }
-.time {
-  position: absolute;
-  left: 126px;
-  top: 0;
-  font-family: Inconsolata;
-  font-size: 23px;
-  line-height: 80px;
-  text-align: center;
-  color: #fefefe;
-  background: #631532;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+img.header-image {
+  display: none;
+}
+@media (min-width: 768px) {
+  img.header-image {
+    display: block;
+    max-width: 100%;
+  }
+  h2 {
+    margin-top: 48px;
+  }
+  h2:first-child {
+    margin-top: 24px;
+  }
+  .t {
+    position: absolute;
+    left: -115px;
+    top: -24px;
+    font-family: Inconsolata;
+    font-size: 23px;
+    line-height: 80px;
+    text-align: center;
+    color: #fefefe;
+    background: #631532;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  .schedule {
+    background-image: url(../images/timeline.png);
+    background-repeat: repeat-y;
+    background-position: 100px 0;
+  }
 }
