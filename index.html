@@ -1,85 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrew & Sarah's Wedding</title>
+    <title>Andrew & Sarah | 18th Oct 2014</title>
 
     <link href="css/index.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Codystar|Inconsolata' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <img src="/images/header-background.jpg" alt="" class="header-image"/>
+</head>
+<body>
+    <img src="/images/header-background.jpg" alt="Andrew & Sarah | 18th Oct 2014" class="header-image" />
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Schedule</h1>
-        </div>
-      </div>
-      <div class="schedule row">
-        <div class="col-sm-offset-2 col-sm-10">
-          <h2><span class="t">12:00</span> Arrival at Heartlands</h2>
-          <p>
-          <a href="http://www.heartlandscornwall.com/">Heartlands</a>
-          is a visitor attraction and World Heritage Site Gateway in Cornwall.
-          </p>
-          <p>
-          Heartlands<br/>
-          Robinson's Shaft<br/>
-          Dudnance Lane<br/>
-          Redruth<br/>
-          Cornwall<br/>
-          TR15 3QY
-          </p>
-
-          <h2><span class="t">12.30</span> Ceremony</h2>
-          <p>
-          Sorry, no confetti allowed!
-          </p>
-
-          <h2><span class="t">13:30</span> Pasties and Pictures</h2>
-          <p>
-          Enjoy a Cornish pasty, explore Heartlands and take some great photos.
-          </p>
-
-          <h2><span class="t">17:00</span> Champagne Reception at Landithy Hall</h2>
-          <div class="row">
-            <div class="col-md-3">
-              <p>
-              Church Road<br/>
-              Madron<br/>
-              Penzance<br/>
-              Cornwall<br/>
-              TR20 8SW 
-              </p>
+        <div class="rsvp row">
+            <div class="col-sm-12">
+                <form action="#" role="form">
+                    <div class="row">
+                        <h2 class="col-sm-12"><i class="fa fa-envelope"></i> RSVP</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Your name:
+                                </label>
+                                <input required type="text" class="form-control" name="name" id="name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="attendance">
+                                    Can you join us?
+                                </label>
+                                <select required class="form-control" id="attendance">
+                                    <option value="shebang">The whole shebang</option>
+                                    <option value="ceremony">Ceremony only</option>
+                                    <option value="dinner">Dinner & dancing only</option>
+                                    <option value="dancing">Dancing only</option>
+                                    <option value="regrets">Sorry, we can't make it</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="guests">
+                                    Number of guests:
+                                </label>
+                                <input required type="text" class="form-control" name="name" id="guests" />
+                            </div>
+                            <div class="form-group">
+                                <label for="diet">
+                                    Dietary requirements (vegetarian etc):
+                                </label>
+                                <input type="text" class="form-control" name="name" id="diet" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-info">RSVP &raquo;</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-9">
-              Please note: Parking is very limited. We advise a short a taxi ride from Penzance.
-            </div>
-          </div>
-
-          <h2><span class="t">18:00</span> Hot Buffet</h2>
-          <p>A delicious range of tagines, salads and treats from <a href="http://www.peppercornkitchen.co.uk/">Peppercorn Kitchen</a>.</p>
-
-          <h2><span class="t">19:00</span> Live Music</h2>
-          <p>
-          An eclectic mix of funky music from <a href="http://www.thechoons.co.uk/">The Choons</a>.
-          </p>
-
-          <h2><span class="t">21:00</span> Cake</h2>
-          <p>We hope you saved room for some tasty cake!</p>
-          <p>Many thanks to master baker Jason Joblin.</p>
-
-          <h2><span class="t">21:30</span> Disco Boogie</h2>
-          <p>Prizes for the best dance moves!</p>
-
-          <h2><span class="t">00:00</span> Fin!</h2>
-          <p>
-          Taxi numbers: ...
-          </p>
         </div>
-      </div>
+        <div class="row rsvp-response" style="display:none">
+            <div class="col-sm-12">
+                Thanks - we'll see you there!
+            </div>
+        </div>
+        <div class="row rsvp-response" style="display:none">
+            <div class="col-sm-12">
+                Thanks for letting us know - we'll miss you!
+            </div>
+        </div>
+        <div class="schedule row">
+            <div class="col-sm-offset-2 col-sm-10">
+                <h2 class="arrival"><span class="t">12:00</span> Arrival at Heartlands</h2>
+                <p>
+                    <a href="http://www.heartlandscornwall.com/">Heartlands</a>
+                    is a visitor attraction and World Heritage Site Gateway in Cornwall.
+         
+                </p>
+                <p>
+                    Heartlands<br />
+                    Robinson's Shaft<br />
+                    Dudnance Lane<br />
+                    Redruth<br />
+                    Cornwall<br />
+                    TR15 3QY
+         
+                </p>
+
+                <h2 class="ceremony"><span class="t">12.30</span> Ceremony</h2>
+                <p>
+                    Sorry, no confetti allowed!
+                </p>
+
+                <h2 class="pics"><span class="t">13:30</span> Pasties and Pictures</h2>
+                <p>
+                    Enjoy a Cornish pasty, explore Heartlands and take some great photos.
+                </p>
+
+                <h2 class="gifts"><span class="t">13:30</span> Gifts</h2>
+                <p>
+                    Just kidding! We've got everything we need, and the pleasure of your company is the best gift we can ask for. But if you insist, we would hugely appreciate any contributions towards our deposit for our first home.
+                </p>
+
+                <h2 class="champagne"><span class="t">17:00</span> Champagne Reception at Landithy Hall</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>
+                            Church Road<br />
+                            Madron<br />
+                            Penzance<br />
+                            Cornwall<br />
+                            TR20 8SW 
+             
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        Please note: Parking is very limited. We advise a short a taxi ride from Penzance.
+           
+                    </div>
+                </div>
+
+                <h2 class="buffet"><span class="t">18:00</span> Hot Buffet</h2>
+                <p>A delicious range of tagines, salads and treats from <a href="http://www.peppercornkitchen.co.uk/">Peppercorn Kitchen</a>.</p>
+
+                <h2 class="band"><span class="t">19:00</span> Live Music</h2>
+                <p>
+                    An eclectic mix of funky music from <a href="http://www.thechoons.co.uk/">The Choons</a>.
+         
+                </p>
+
+                <h2 class="cake"><span class="t">21:00</span> Cake</h2>
+                <p>We hope you saved room for some tasty cake!</p>
+                <p>Many thanks to master baker Jason Joblin.</p>
+
+                <h2 class="disco"><span class="t">21:30</span> Disco Boogie</h2>
+                <p>Prizes for the best dance moves!</p>
+
+                <h2 class="fin"><span class="t">00:00</span> Fin!</h2>
+                <p>
+                    Taxi numbers: ...
+         
+                </p>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
