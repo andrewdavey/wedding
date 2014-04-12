@@ -5782,12 +5782,17 @@ body {
 }
 h2 {
   position: relative;
-  color: #db5c5c;
   font-family: Inconsolata;
+  color: #db5c5c;
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 35px;
+}
+p {
+  font-size: 15px;
+}
+a {
+  text-decoration: underline;
 }
 form,
 .rsvp-response {
@@ -5798,7 +5803,6 @@ form h2,
   color: #60a56f;
   font-weight: bold;
   margin-bottom: 15px;
-  background-image: url(../images/icons/rsvp.png);
 }
 form .btn-info,
 .rsvp-response .btn-info {
@@ -5809,37 +5813,95 @@ form .btn-info,
   letter-spacing: -2px;
   font-family: Inconsolata;
 }
-h2.arrival {
-  background-image: url(../images/icons/arrival.png);
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  .rsvp {
+    padding: 0 11px;
+    margin-top: 35px;
+  }
+  form,
+  .rsvp-response {
+    padding: 0 30px 30px 30px;
+    margin-bottom: 35px;
+    border: solid 1px #d5d5d5;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
+    box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
+  }
+  form h2,
+  .rsvp-response h2 {
+    background-image: url(../images/icons/rsvp.png);
+  }
+  img.header-image {
+    display: block;
+    max-width: 100%;
+  }
+  h2.arrival {
+    background-image: url(../images/icons/arrival.png);
+  }
+  h2.ceremony {
+    background-image: url(../images/icons/ceremony.png);
+  }
+  h2.pics {
+    background-image: url(../images/icons/pics.png);
+  }
+  h2.gifts {
+    background-image: url(../images/icons/gifts.png);
+  }
+  h2.champagne {
+    background-image: url(../images/icons/champagne.png);
+  }
+  h2.buffet {
+    background-image: url(../images/icons/buffet.png);
+  }
+  h2.band {
+    background-image: url(../images/icons/band.png);
+  }
+  h2.cake {
+    background-image: url(../images/icons/cake.png);
+  }
+  h2.disco {
+    background-image: url(../images/icons/disco.png);
+  }
+  h2.fin {
+    background-image: url(../images/icons/fin.png);
+  }
+  h2 {
+    margin-top: 48px;
+    padding-left: 35px;
+  }
+  h2:first-child {
+    margin-top: 24px;
+  }
+  .t {
+    position: absolute;
+    left: -115px;
+    top: -24px;
+    font-family: Inconsolata;
+    font-size: 23px;
+    line-height: 80px;
+    text-align: center;
+    color: #fefefe;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-shadow: 0 1px 0 #db5c5c;
+    background: #e99b9b;
+    background: radial-gradient(circle, #e99b9b, #e07171);
+  }
+  .schedule {
+    background-image: url(../images/timeline.png);
+    background-repeat: repeat-y;
+    background-position: 65px 0;
+  }
+  .schedule p {
+    padding-left: 35px;
+  }
 }
-h2.ceremony {
-  background-image: url(../images/icons/ceremony.png);
-}
-h2.pics {
-  background-image: url(../images/icons/pics.png);
-}
-h2.gifts {
-  background-image: url(../images/icons/gifts.png);
-}
-h2.champagne {
-  background-image: url(../images/icons/champagne.png);
-}
-h2.buffet {
-  background-image: url(../images/icons/buffet.png);
-}
-h2.band {
-  background-image: url(../images/icons/band.png);
-}
-h2.cake {
-  background-image: url(../images/icons/cake.png);
-}
-h2.disco {
-  background-image: url(../images/icons/disco.png);
-}
-h2.fin {
-  background-image: url(../images/icons/fin.png);
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
   h2.arrival {
     background-image: url(../images/icons/arrival@2x.png);
     background-size: 21px 19px;
@@ -5881,54 +5943,10 @@ h2.fin {
     background-size: 21px 19px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .rsvp {
     padding: 0 46px;
-    margin-top: 35px;
   }
-  form,
-  .rsvp-response {
-    padding: 0 30px 30px 30px;
-    margin-bottom: 35px;
-    border: solid 1px #d5d5d5;
-    background-color: white;
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
-    box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
-  }
-  img.header-image {
-    display: block;
-    max-width: 100%;
-  }
-  h2 {
-    margin-top: 48px;
-  }
-  h2:first-child {
-    margin-top: 24px;
-  }
-  .t {
-    position: absolute;
-    left: -115px;
-    top: -24px;
-    font-family: Inconsolata;
-    font-size: 23px;
-    line-height: 80px;
-    text-align: center;
-    color: #fefefe;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    text-shadow: 0 1px 0 #db5c5c;
-    background: #e99b9b;
-    background: radial-gradient(circle, #e99b9b, #e07171);
-  }
-  .schedule {
-    background-image: url(../images/timeline.png);
-    background-repeat: repeat-y;
-    background-position: 65px 0;
-  }
-}
-@media (min-width: 992px) {
   .schedule {
     background-position: 100px 0;
   }

@@ -12,12 +12,19 @@ body {
 
 h2 {
   position: relative;
-  color: darken(@brand-success, 15%);
   font-family: Inconsolata;
+  color: darken(@brand-success, 15%);
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 35px;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: underline;
 }
 
 form, .rsvp-response {
@@ -27,7 +34,6 @@ form, .rsvp-response {
     color: darken(@brand-info, 15%);
     font-weight: bold;
     margin-bottom: 15px;
-    background-image: url(../images/icons/rsvp.png);
   }
 
   .btn-info {
@@ -41,34 +47,14 @@ form, .rsvp-response {
   font-family: Inconsolata;
 }
 
-h2.arrival    { background-image: url(../images/icons/arrival.png); }
-h2.ceremony   { background-image: url(../images/icons/ceremony.png); }
-h2.pics       { background-image: url(../images/icons/pics.png); }
-h2.gifts      { background-image: url(../images/icons/gifts.png); }
-h2.champagne  { background-image: url(../images/icons/champagne.png); }
-h2.buffet     { background-image: url(../images/icons/buffet.png); }
-h2.band       { background-image: url(../images/icons/band.png); }
-h2.cake       { background-image: url(../images/icons/cake.png); }
-h2.disco      { background-image: url(../images/icons/disco.png); }
-h2.fin        { background-image: url(../images/icons/fin.png); }
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-  h2.arrival    { background-image: url(../images/icons/arrival@2x.png); background-size: 21px 19px; }
-  h2.ceremony   { background-image: url(../images/icons/ceremony@2x.png); background-size: 21px 19px; }
-  h2.pics       { background-image: url(../images/icons/pics@2x.png); background-size: 21px 19px; }
-  h2.gifts      { background-image: url(../images/icons/gifts@2x.png); background-size: 21px 19px; }
-  h2.champagne  { background-image: url(../images/icons/champagne@2x.png); background-size: 21px 19px; }
-  h2.buffet     { background-image: url(../images/icons/buffet@2x.png); background-size: 21px 19px; }
-  h2.band       { background-image: url(../images/icons/band@2x.png); background-size: 21px 19px; }
-  h2.cake       { background-image: url(../images/icons/cake@2x.png); background-size: 21px 19px; }
-  h2.disco      { background-image: url(../images/icons/disco@2x.png); background-size: 21px 19px; }
-  h2.fin        { background-image: url(../images/icons/fin@2x.png); background-size: 21px 19px; }
-}
-
 @media (min-width: 768px) {
   
+  p {
+    font-size: 16px;
+  }
+
   .rsvp {
-    padding: 0 46px;
+    padding: 0 11px;
     margin-top: 35px;
   }
 
@@ -80,6 +66,10 @@ h2.fin        { background-image: url(../images/icons/fin.png); }
     border-radius: 10px;
     -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
     box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
+
+    h2 {
+      background-image: url(../images/icons/rsvp.png);
+    }
   }
 
   img.header-image {
@@ -87,8 +77,33 @@ h2.fin        { background-image: url(../images/icons/fin.png); }
     max-width: 100%;
   }
 
+  h2.arrival    { background-image: url(../images/icons/arrival.png); }
+  h2.ceremony   { background-image: url(../images/icons/ceremony.png); }
+  h2.pics       { background-image: url(../images/icons/pics.png); }
+  h2.gifts      { background-image: url(../images/icons/gifts.png); }
+  h2.champagne  { background-image: url(../images/icons/champagne.png); }
+  h2.buffet     { background-image: url(../images/icons/buffet.png); }
+  h2.band       { background-image: url(../images/icons/band.png); }
+  h2.cake       { background-image: url(../images/icons/cake.png); }
+  h2.disco      { background-image: url(../images/icons/disco.png); }
+  h2.fin        { background-image: url(../images/icons/fin.png); }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    h2.arrival    { background-image: url(../images/icons/arrival@2x.png); background-size: 21px 19px; }
+    h2.ceremony   { background-image: url(../images/icons/ceremony@2x.png); background-size: 21px 19px; }
+    h2.pics       { background-image: url(../images/icons/pics@2x.png); background-size: 21px 19px; }
+    h2.gifts      { background-image: url(../images/icons/gifts@2x.png); background-size: 21px 19px; }
+    h2.champagne  { background-image: url(../images/icons/champagne@2x.png); background-size: 21px 19px; }
+    h2.buffet     { background-image: url(../images/icons/buffet@2x.png); background-size: 21px 19px; }
+    h2.band       { background-image: url(../images/icons/band@2x.png); background-size: 21px 19px; }
+    h2.cake       { background-image: url(../images/icons/cake@2x.png); background-size: 21px 19px; }
+    h2.disco      { background-image: url(../images/icons/disco@2x.png); background-size: 21px 19px; }
+    h2.fin        { background-image: url(../images/icons/fin@2x.png); background-size: 21px 19px; }
+  }
+
   h2 {
     margin-top: 48px;
+    padding-left: 35px;
   }
 
   h2:first-child {
@@ -116,10 +131,18 @@ h2.fin        { background-image: url(../images/icons/fin.png); }
     background-image: url(../images/timeline.png);
     background-repeat: repeat-y;
     background-position: 65px 0;
+
+    p {
+      padding-left: 35px;
+    }
   }
 }
 
 @media (min-width: 992px) {
+  .rsvp {
+    padding: 0 46px;
+  }
+
   .schedule {
     background-position: 100px 0;
   }
