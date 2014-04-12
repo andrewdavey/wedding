@@ -5780,6 +5780,38 @@ body {
     background-image: url(../images/patterns/ravenna@2x.png);
   }
 }
+.cover-image {
+  display: block;
+  min-height: 550px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header {
+  background-image: url(../images/engine-house.png);
+}
+.reception {
+  background-image: url(../images/landithy-hall.jpg);
+}
+.footer {
+  background-image: url(../images/heartlands.jpg);
+}
+.header-details {
+  padding: 25px;
+}
+.header-details img {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 650px;
+}
+h1 {
+  margin: 0;
+  font-family: Codystar;
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 50px;
+}
 h2 {
   position: relative;
   font-family: Inconsolata;
@@ -5788,7 +5820,8 @@ h2 {
   background-repeat: no-repeat;
   background-position: left center;
 }
-p {
+p,
+table {
   font-size: 15px;
 }
 a {
@@ -5814,7 +5847,11 @@ form .btn-info,
   font-family: Inconsolata;
 }
 @media (min-width: 768px) {
-  p {
+  .header-details {
+    padding: 50px;
+  }
+  p,
+  table {
     font-size: 16px;
   }
   .rsvp {
@@ -5834,10 +5871,6 @@ form .btn-info,
   form h2,
   .rsvp-response h2 {
     background-image: url(../images/icons/rsvp.png);
-  }
-  img.header-image {
-    display: block;
-    max-width: 100%;
   }
   h2.arrival {
     background-image: url(../images/icons/arrival.png);
@@ -5900,6 +5933,9 @@ form .btn-info,
   .schedule p {
     padding-left: 35px;
   }
+  .schedule td {
+    padding: 0 0 0 35px;
+  }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
   h2.arrival {
@@ -5944,6 +5980,18 @@ form .btn-info,
   }
 }
 @media (min-width: 992px) {
+  .rsvp {
+    padding: 0 46px;
+  }
+  .schedule {
+    background-position: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header-details {
+    font-size: 55px;
+    padding: 90px;
+  }
   .rsvp {
     padding: 0 46px;
   }

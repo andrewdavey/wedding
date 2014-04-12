@@ -10,6 +10,37 @@ body {
   }
 }
 
+.cover-image {
+  display: block;
+  min-height: 550px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header    {  background-image: url(../images/engine-house.png); }
+.reception {  background-image: url(../images/landithy-hall.jpg); }
+.footer    {  background-image: url(../images/heartlands.jpg); }
+
+.header-details {
+  padding: 25px;
+
+  img {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-family: Codystar;
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 50px;
+}
+
 h2 {
   position: relative;
   font-family: Inconsolata;
@@ -19,7 +50,7 @@ h2 {
   background-position: left center;
 }
 
-p {
+p, table {
   font-size: 15px;
 }
 
@@ -48,8 +79,12 @@ form, .rsvp-response {
 }
 
 @media (min-width: 768px) {
-  
-  p {
+
+  .header-details {
+    padding: 50px;
+  }
+
+  p, table {
     font-size: 16px;
   }
 
@@ -70,11 +105,6 @@ form, .rsvp-response {
     h2 {
       background-image: url(../images/icons/rsvp.png);
     }
-  }
-
-  img.header-image {
-    display: block;
-    max-width: 100%;
   }
 
   h2.arrival    { background-image: url(../images/icons/arrival.png); }
@@ -135,6 +165,10 @@ form, .rsvp-response {
     p {
       padding-left: 35px;
     }
+
+    td {
+      padding: 0 0 0 35px;
+    }
   }
 }
 
@@ -148,3 +182,17 @@ form, .rsvp-response {
   }
 }
 
+@media (min-width: 1200px) {
+  .header-details {
+    font-size: 55px;
+    padding: 90px;
+  }
+  
+  .rsvp {
+    padding: 0 46px;
+  }
+
+  .schedule {
+    background-position: 100px 0;
+  }
+}
