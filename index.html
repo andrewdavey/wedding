@@ -19,7 +19,7 @@
     <div class="container">
         <div class="rsvp row">
             <div class="col-sm-12">
-                <form action="#" role="form">
+                <form action="https://docs.google.com/a/equin.co.uk/forms/d/1HsOwThpfY3kvvNGOGS3RC-m_ZH5YF5XjCdtVHEF4qHM/formResponse" action="POST" role="form" id="rsvp-form">
                     <div class="row">
                         <div class="col-sm-12">
                             <h2><i class="fa fa-envelope"></i> RSVP</h2>
@@ -31,17 +31,17 @@
                                 <label for="name">
                                     Your name:
                                 </label>
-                                <input tabindex="1" required type="text" class="form-control" name="name" id="name" />
+                                <input tabindex="1" required type="text" class="form-control" name="entry.378895718" id="name" />
                             </div>
                             <div class="form-group">
                                 <label for="attendance">
                                     Can you join us?
                                 </label>
-                                <select tabindex="3" required class="form-control" id="attendance">
+                                <select name="entry.42676425" tabindex="3" required class="form-control" id="attendance">
                                     <optgroup label="Yes:">
                                         <option value="shebang">The whole shebang</option>
                                         <option value="ceremony">Ceremony only</option>
-                                        <option value="dinner">Dinner & dancing only</option>
+                                        <option value="dinner">Dinner &amp; dancing only</option>
                                         <option value="dancing">Dancing only</option>
                                     </optgroup>
                                     <option value="regrets">Sorry, we can't make it</option>
@@ -53,13 +53,13 @@
                                 <label for="guests">
                                     Number of guests:
                                 </label>
-                                <input tabindex="2" required type="text" class="form-control" name="name" id="guests" />
+                                <input tabindex="2" required type="text" class="form-control" name="entry.347926840" id="guests" />
                             </div>
                             <div class="form-group">
                                 <label for="diet">
                                     Dietary requirements (vegetarian etc):
                                 </label>
-                                <input tabindex="4" type="text" class="form-control" name="name" id="diet" />
+                                <input tabindex="4" type="text" class="form-control" name="entry.873217999" id="diet" />
                             </div>
                         </div>
                     </div>
@@ -71,12 +71,12 @@
                 </form>
             </div>
         </div>
-        <div class="row rsvp-response" style="display:none">
+        <div id="rsvp-yes" class="row rsvp-response" style="display:none">
             <div class="col-sm-12">
                 Thanks - we'll see you there!
             </div>
         </div>
-        <div class="row rsvp-response" style="display:none">
+        <div id="rsvp-no" class="row rsvp-response" style="display:none">
             <div class="col-sm-12">
                 Thanks for letting us know - we'll miss you!
             </div>
@@ -196,5 +196,8 @@
     <div class="footer cover-image">
         &nbsp;
     </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="jquery.form.min.js"></script>
+    <script src="rsvp.js"></script>
 </body>
 </html>
