@@ -5778,11 +5778,12 @@ body {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
     background-image: url(../images/patterns/ravenna@2x.png);
+    background-size: 387px 201px;
   }
 }
 .cover-image {
   display: block;
-  min-height: 550px;
+  min-height: 600px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5790,9 +5791,6 @@ body {
 }
 .header {
   background-image: url(../images/engine-house.png);
-}
-.reception {
-  background-image: url(../images/landithy-hall.jpg);
 }
 .footer {
   background-image: url(../images/heartlands.jpg);
