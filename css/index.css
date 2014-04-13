@@ -5783,25 +5783,26 @@ body {
 }
 .cover-image {
   display: block;
-  min-height: 600px;
+  min-height: 500px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 .header {
-  background-image: url(../images/engine-house.png);
+  background-image: url(../images/engine-house-vignette.png);
 }
 .footer {
   background-image: url(../images/heartlands.jpg);
 }
 .header-details {
   padding: 25px;
+  text-align: center;
 }
 .header-details img {
-  margin-top: 50px;
+  margin: 10px auto 0 auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 600px;
 }
 h1 {
   margin: 0;
@@ -5809,6 +5810,14 @@ h1 {
   color: #fefefe;
   font-weight: bold;
   font-size: 50px;
+  text-shadow: 1px 1px 5px #000000;
+}
+.date {
+  margin: 25px;
+  font-size: 30px;
+  color: #fefefe;
+  text-shadow: 0 1px 3px #000000;
+  font-family: Inconsolata;
 }
 h2 {
   position: relative;
@@ -5845,8 +5854,14 @@ form .btn-info,
   font-family: Inconsolata;
 }
 @media (min-width: 768px) {
+  .cover-image {
+    min-height: 600px;
+  }
   .header-details {
     padding: 50px;
+  }
+  h1 {
+    font-size: 65px;
   }
   p,
   table {
@@ -5995,5 +6010,10 @@ form .btn-info,
   }
   .schedule {
     background-position: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .date {
+    font-size: 24px;
   }
 }
