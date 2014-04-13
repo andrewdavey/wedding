@@ -5781,12 +5781,14 @@ body {
     background-size: 387px 201px;
   }
 }
+/*************************/
+/**** HEADER & FOOTER ****/
+/*************************/
 .cover-image {
-  display: block;
   min-height: 500px;
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 }
 .header {
@@ -5799,9 +5801,13 @@ body {
   padding: 25px;
   text-align: center;
 }
+.header-details p {
+  color: #fefefe;
+  text-shadow: 0 1px 3px #000000;
+}
 .header-details img {
   margin: 10px auto 0 auto;
-  width: 100%;
+  width: 80%;
   max-width: 600px;
 }
 h1 {
@@ -5812,31 +5818,64 @@ h1 {
   font-size: 50px;
   text-shadow: 1px 1px 5px #000000;
 }
-.date {
-  margin: 25px;
-  font-size: 30px;
-  color: #fefefe;
-  text-shadow: 0 1px 3px #000000;
-  font-family: Inconsolata;
+.script {
+  font-family: 'Rouge Script';
+  font-weight: bold;
+  font-size: 50px;
+  margin: 15px;
 }
+.heading {
+  font-family: Pompiere;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  .cover-image {
+    min-height: 600px;
+  }
+  .header-details {
+    padding: 50px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+}
+/***********************/
+/******* GENERAL *******/
+/***********************/
 h2 {
   position: relative;
-  font-family: Inconsolata;
+  font-family: Pompiere, Helvetica, Arial, sans-serif;
+  font-weight: bold;
   color: #db5c5c;
   text-transform: uppercase;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 100px center;
 }
 p,
 table {
   font-size: 15px;
 }
+td {
+  padding-right: 30px;
+}
 a {
   text-decoration: underline;
 }
+@media (min-width: 768px) {
+  p,
+  table {
+    font-size: 16px;
+  }
+}
+/************************/
+/********* RSVP *********/
+/************************/
 form,
 .rsvp-response {
   margin-bottom: 15px;
+  margin-top: 35px;
 }
 form h2,
 .rsvp-response h2 {
@@ -5849,28 +5888,7 @@ form .btn-info,
   margin-top: 15px;
   font-size: 17px;
 }
-.t {
-  letter-spacing: -2px;
-  font-family: Inconsolata;
-}
 @media (min-width: 768px) {
-  .cover-image {
-    min-height: 600px;
-  }
-  .header-details {
-    padding: 50px;
-  }
-  h1 {
-    font-size: 65px;
-  }
-  p,
-  table {
-    font-size: 16px;
-  }
-  .rsvp {
-    padding: 0 11px;
-    margin-top: 35px;
-  }
   form,
   .rsvp-response {
     padding: 0 30px 30px 30px;
@@ -5881,53 +5899,31 @@ form .btn-info,
     -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
     box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
   }
-  form h2,
-  .rsvp-response h2 {
-    background-image: url(../images/icons/rsvp.png);
-  }
-  h2.arrival {
-    background-image: url(../images/icons/arrival.png);
-  }
-  h2.ceremony {
-    background-image: url(../images/icons/ceremony.png);
-  }
-  h2.pics {
-    background-image: url(../images/icons/pics.png);
-  }
-  h2.gifts {
-    background-image: url(../images/icons/gifts.png);
-  }
-  h2.champagne {
-    background-image: url(../images/icons/champagne.png);
-  }
-  h2.buffet {
-    background-image: url(../images/icons/buffet.png);
-  }
-  h2.band {
-    background-image: url(../images/icons/band.png);
-  }
-  h2.cake {
-    background-image: url(../images/icons/cake.png);
-  }
-  h2.disco {
-    background-image: url(../images/icons/disco.png);
-  }
-  h2.fin {
-    background-image: url(../images/icons/fin.png);
-  }
-  h2 {
-    margin-top: 48px;
-    padding-left: 35px;
-  }
-  h2:first-child {
-    margin-top: 24px;
-  }
+}
+/************************/
+/******* SCHEDULE *******/
+/************************/
+.schedule {
+  padding-bottom: 45px;
+}
+.schedule h2 {
+  margin-top: 25px;
+}
+.schedule img {
+  max-width: 100%;
+  margin: 25px 0 15px 0;
+}
+.t {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Pompiere;
+  font-size: 26px;
+}
+@media (min-width: 768px) {
   .t {
     position: absolute;
-    left: -115px;
+    left: 0;
     top: -24px;
-    font-family: Inconsolata;
-    font-size: 23px;
     line-height: 80px;
     text-align: center;
     color: #fefefe;
@@ -5941,63 +5937,32 @@ form .btn-info,
   .schedule {
     background-image: url(../images/timeline.png);
     background-repeat: repeat-y;
-    background-position: 65px 0;
+    background-position: 55px 0;
+  }
+  .schedule h2 {
+    margin-top: 48px;
+    padding-left: 130px;
+  }
+  .schedule h2:first-child {
+    margin-top: 24px;
   }
   .schedule p {
-    padding-left: 35px;
+    padding-left: 130px;
   }
-  .schedule td {
-    padding: 0 0 0 35px;
+  .schedule img {
+    max-width: 100%;
+    margin: 25px 0 0 0;
   }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
-  h2.arrival {
-    background-image: url(../images/icons/arrival@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.ceremony {
-    background-image: url(../images/icons/ceremony@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.pics {
-    background-image: url(../images/icons/pics@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.gifts {
-    background-image: url(../images/icons/gifts@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.champagne {
-    background-image: url(../images/icons/champagne@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.buffet {
-    background-image: url(../images/icons/buffet@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.band {
-    background-image: url(../images/icons/band@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.cake {
-    background-image: url(../images/icons/cake@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.disco {
-    background-image: url(../images/icons/disco@2x.png);
-    background-size: 21px 19px;
-  }
-  h2.fin {
-    background-image: url(../images/icons/fin@2x.png);
-    background-size: 21px 19px;
+  .schedule table {
+    margin-left: 130px;
   }
 }
 @media (min-width: 992px) {
-  .rsvp {
-    padding: 0 46px;
-  }
   .schedule {
-    background-position: 100px 0;
+    background-position: 55px 0;
+  }
+  .t {
+    left: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -6007,9 +5972,6 @@ form .btn-info,
   }
   .rsvp {
     padding: 0 46px;
-  }
-  .schedule {
-    background-position: 100px 0;
   }
 }
 @media (max-width: 768px) {
