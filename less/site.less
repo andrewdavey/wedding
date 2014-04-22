@@ -11,12 +11,13 @@ body {
   }
 }
 
+
 /*************************/
 /**** HEADER & FOOTER ****/
 /*************************/
 
 .cover-image {
-  min-height: 500px;
+  min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -24,19 +25,21 @@ body {
 }
 
 .header   { background-image: url(../images/engine-house-vignette.png); }
-.footer   { background-image: url(../images/heartlands.jpg); }
+.footer   { background-image: url(../images/heartlands2.jpg); }
 
-.header-details {
-  padding: 25px;
+.header-details,
+.footer {
+  padding: 25px 15px;
   text-align: center;
   
   p {
     color: #fefefe;
     text-shadow: 0 1px 3px #000000;
+    margin: 15px;
   }
 
   img {
-    margin: 10px auto 0 auto;
+    margin: 10px auto 15px auto;
     width: 80%;
     max-width: 600px;
   }
@@ -51,18 +54,28 @@ h1 {
   text-shadow: 1px 1px 5px #000000;
 }
 
-.script {
-  font-family: 'Rouge Script';
-  font-weight: bold;
-  font-size: 50px;
-  margin: 15px;
+.wedding-date,
+.script,
+.footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
 }
 
-.heading {
-  font-family: Pompiere;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 10px;
+@media (min-width: 360px) {
+  .wedding-date,
+  .script,
+  .footer p {
+    font-family: 'Rouge Script';
+  }
+
+  .script,
+  .footer p {
+    font-size: 40px;
+  }
+
+  .wedding-date {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -70,14 +83,25 @@ h1 {
     min-height: 600px;
   }
   
-  .header-details {
+  .header-details, 
+  .footer {
     padding: 50px;
   }
 
   h1 {
     font-size: 65px;
   }
+
+  .script,
+  .footer p {
+    font-size: 60px;
+  }
+
+  .wedding-date {
+    font-size: 50px;
+  }
 }
+
 
 /***********************/
 /******* GENERAL *******/
@@ -143,7 +167,14 @@ form,
     -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
     box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
   }
+  
+  .bunting {
+    background-image: url(/images/bunting-flag.png);
+    background-repeat: repeat-x;
+    background-position: 0 40px;
+  }
 }
+
 
 /************************/
 /******* SCHEDULE *******/
@@ -224,6 +255,12 @@ form,
   }
 }
 
+
+/**************************/
+/******* RESPONSIVE *******/
+/**************************/
+
+// Desktops
 @media (min-width: 1200px) {
   .header-details {
     font-size: 55px;
@@ -235,8 +272,12 @@ form,
   }
 }
 
-@media (max-width: 768px) {
-  .date {
-    font-size: 24px;
+// Mobiles
+@media (max-width: 320px) {
+  .header-details {
+    img {
+      width: 100%;
+    }
   }
 }
+
