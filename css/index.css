@@ -5958,10 +5958,15 @@ form .btn-info,
 /******* SCHEDULE *******/
 /************************/
 .schedule-date {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 38px;
   border-bottom: dotted 1px;
   padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .schedule-date {
+    margin-bottom: 25px;
+  }
 }
 .schedule {
   padding-bottom: 45px;
@@ -6021,16 +6026,18 @@ form .btn-info,
 .schedule.schedule-17th {
   background-image: none;
 }
-.schedule.schedule-17th .t {
-  text-shadow: 0 1px 0 #60a56f;
-  background: #91c19b;
-  background: radial-gradient(circle, #91c19b, #70af7d);
-}
 .schedule.schedule-17th h2 {
   color: #91c19b;
 }
 .pre-wedding {
   color: #91c19b;
+}
+@media (min-width: 768px) {
+  .schedule.schedule-17th .t {
+    text-shadow: 0 1px 0 #60a56f;
+    background: #91c19b;
+    background: radial-gradient(circle, #91c19b, #70af7d);
+  }
 }
 @media (min-width: 992px) {
   .schedule {

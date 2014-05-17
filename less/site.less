@@ -205,10 +205,16 @@ form,
 /************************/
 
 .schedule-date {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 38px;
   border-bottom: dotted 1px;
   padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .schedule-date {
+    margin-bottom: 25px;
+  }
 }
 
 .schedule {
@@ -280,12 +286,6 @@ form,
 .schedule.schedule-17th {
   background-image: none;
 
-  .t {
-    text-shadow: 0 1px 0 darken(@brand-info, 15%);
-    background: @brand-info;
-    background: radial-gradient(circle, @brand-info, darken(@brand-info, 10%));
-  }
-
   h2 {
     color: @brand-info;
   }
@@ -293,6 +293,16 @@ form,
 
 .pre-wedding {
   color: @brand-info;
+}
+
+@media (min-width: 768px) {
+  .schedule.schedule-17th {
+    .t {
+      text-shadow: 0 1px 0 darken(@brand-info, 15%);
+      background: @brand-info;
+      background: radial-gradient(circle, @brand-info, darken(@brand-info, 10%));
+    }
+  }
 }
 
 @media (min-width: 992px) {
