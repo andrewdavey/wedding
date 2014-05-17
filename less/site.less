@@ -10,22 +10,39 @@ body {
     background-size: 387px 201px;
   }
 }
-
-
 /*************************/
 /**** HEADER & FOOTER ****/
 /*************************/
 
 .cover-image {
-  min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
-.header   { background-image: url(../images/engine-house-vignette.png); }
-.footer   { background-image: url(../images/heartlands2.jpg); }
+.header {
+  min-height: 400px;
+}
+
+.footer {
+  min-height: 300px;
+}
+
+@media (max-width: 999px) {
+  .header   { background-image: url(../images/enginehouse-1000.jpg); }
+  .footer   { background-image: url(../images/heartlands-1000.jpg); }
+}
+
+@media (min-width: 1000px) and (max-width: 1999px) {
+  .header   { background-image: url(../images/enginehouse1000-2000.jpg); }
+  .footer   { background-image: url(../images/heartlands1000-2000.jpg); }
+}
+
+@media (min-width: 2000px) {
+  .header   { background-image: url(../images/enginehouse2000-2500.jpg); }
+  .footer   { background-image: url(../images/heartlands2000-2500.jpg); }
+}
 
 .header-details,
 .footer {
@@ -46,7 +63,7 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-family: Codystar;
   color: #fefefe;
   font-weight: bold;
@@ -79,8 +96,12 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .cover-image {
+  .header {
     min-height: 600px;
+  }
+
+  .footer {
+    min-height: 450px;
   }
   
   .header-details, 
@@ -89,6 +110,7 @@ h1 {
   }
 
   h1 {
+    margin: 0;
     font-size: 65px;
   }
 
