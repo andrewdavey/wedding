@@ -140,7 +140,8 @@ h2 {
 }
 
 p, table {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.4em;
 }
     
 td {
@@ -153,7 +154,8 @@ a {
 
 @media (min-width: 768px) {
   p, table {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.6em;
   }
 }
 
@@ -202,11 +204,19 @@ form,
 /******* SCHEDULE *******/
 /************************/
 
+.schedule-date {
+  margin-bottom: 25px;
+  font-size: 38px;
+  border-bottom: dotted 1px;
+  padding-bottom: 8px;
+}
+
 .schedule {
   padding-bottom: 45px;
   
   h2 {
     margin-top: 25px;
+    margin-bottom: 15px;
   }
 
   img {
@@ -265,6 +275,24 @@ form,
       margin-left: 130px;
     }
   }
+}
+
+.schedule.schedule-17th {
+  background-image: none;
+
+  .t {
+    text-shadow: 0 1px 0 darken(@brand-info, 15%);
+    background: @brand-info;
+    background: radial-gradient(circle, @brand-info, darken(@brand-info, 10%));
+  }
+
+  h2 {
+    color: @brand-info;
+  }
+}
+
+.pre-wedding {
+  color: @brand-info;
 }
 
 @media (min-width: 992px) {
