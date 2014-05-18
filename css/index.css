@@ -5925,6 +5925,7 @@ form,
 .rsvp-response {
   margin-bottom: 25px;
   margin-top: 35px;
+  min-height: 200px;
 }
 form h2,
 .rsvp-response h2 {
