@@ -5937,6 +5937,21 @@ form .btn-info,
   margin-top: 15px;
   font-size: 17px;
 }
+form .form-label,
+.rsvp-response .form-label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+form .label-heading,
+.rsvp-response .label-heading {
+  margin: 15px 0 10px 0;
+}
+form .checkbox-label,
+.rsvp-response .checkbox-label {
+  font-weight: normal;
+  font-size: 16px;
+}
 @media (min-width: 768px) {
   form,
   .rsvp-response {
@@ -5952,6 +5967,14 @@ form .btn-info,
     background-image: url(/images/bunting-flag.png);
     background-repeat: repeat-x;
     background-position: 0 40px;
+  }
+  form .form-label,
+  .rsvp-response .form-label {
+    font-size: 18px;
+  }
+  form .checkbox-label,
+  .rsvp-response .checkbox-label {
+    font-size: 18px;
   }
 }
 /************************/
