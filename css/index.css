@@ -5919,68 +5919,16 @@ a {
   }
 }
 /************************/
-/********* RSVP *********/
-/************************/
-form,
-.rsvp-response {
-  margin-bottom: 25px;
-  margin-top: 35px;
-  min-height: 200px;
-}
-form h2,
-.rsvp-response h2 {
-  color: #60a56f;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-form .btn-info,
-.rsvp-response .btn-info {
-  margin-top: 15px;
-  font-size: 17px;
-}
-form .form-label,
-.rsvp-response .form-label {
-  display: block;
-  font-weight: bold;
-  font-size: 16px;
-}
-form .label-heading,
-.rsvp-response .label-heading {
-  margin: 15px 0 10px 0;
-}
-form .checkbox-label,
-.rsvp-response .checkbox-label {
-  font-weight: normal;
-  font-size: 16px;
-}
-@media (min-width: 768px) {
-  form,
-  .rsvp-response {
-    padding: 0 30px 30px 30px;
-    margin-bottom: 35px;
-    border: solid 1px #d5d5d5;
-    background-color: white;
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
-    box-shadow: 2px 2px 5px 2px rgba(177, 177, 177, 0.33);
-  }
-  .bunting {
-    background-image: url(/images/bunting-flag.png);
-    background-repeat: repeat-x;
-    background-position: 0 40px;
-  }
-  form .form-label,
-  .rsvp-response .form-label {
-    font-size: 18px;
-  }
-  form .checkbox-label,
-  .rsvp-response .checkbox-label {
-    font-size: 18px;
-  }
-}
-/************************/
 /******* SCHEDULE *******/
 /************************/
+.container {
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-top: 45px;
+  }
+}
 .schedule-17th a {
   color: #3D8DA2;
 }
@@ -5992,7 +5940,7 @@ form .checkbox-label,
 }
 @media (min-width: 768px) {
   .schedule-date {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 }
 .schedule {
